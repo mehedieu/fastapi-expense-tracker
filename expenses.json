@@ -1,0 +1,72 @@
+{
+  "E001": {
+    "name": "Grocery Shopping",
+    "amount": 2500,
+    "category": "Food",
+    "date": "2026-08-01",
+    "description": "Monthly grocery shopping"
+  },
+  "E002": {
+    "name": "Uber Ride",
+    "amount": 450,
+    "category": "Transportation",
+    "date": "2026-08-02",
+    "description": "Ride from office to home"
+  },
+  "E003": {
+    "name": "Electricity Bill",
+    "amount": 1800,
+    "category": "Bills",
+    "date": "2026-08-03",
+    "description": "Monthly electricity bill"
+  },
+  "E004": {
+    "name": "Restaurant Dinner",
+    "amount": 1200,
+    "category": "Food",
+    "date": "2026-08-04",
+    "description": "Dinner with friends"
+  },
+  "E005": {
+    "name": "Internet Bill",
+    "amount": 1000,
+    "category": "Bills",
+    "date": "2026-08-05",
+    "description": "Monthly internet subscription"
+  },
+  "E006": {
+    "name": "Movie Ticket",
+    "amount": 600,
+    "category": "Entertainment",
+    "date": "2026-08-06",
+    "description": "Movie ticket for weekend"
+  },
+  "E007": {
+    "name": "Medicine",
+    "amount": 750,
+    "category": "Health",
+    "date": "2026-08-07",
+    "description": "Purchased regular medicines"
+  },
+  "E008": {
+    "name": "New Shirt",
+    "amount": 1500,
+    "category": "Shopping",
+    "date": "2026-08-07",
+    "description": "Bought a casual shirt"
+  },
+  "E009": {
+    "name": "Mobile Recharge",
+    "amount": 500,
+    "category": "Communication",
+    "date": "2026-08-08",
+    "description": "Monthly mobile recharge"
+  },
+  "E010": {
+    "name": "Coffee",
+    "amount": 300,
+    "category": "Food",
+    "date": "2026-08-09",
+    "description": "Coffee with a colleague"
+  }
+}
