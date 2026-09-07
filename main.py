@@ -96,5 +96,5 @@ def delete_expense(expense_id : str):
     data = load_data()
     if expense_id not in data:
         raise HTTPException(status_code=404, detail='Expense not found')
-    del git add README.mddata[expense_id]
+    del data[expense_id]
     save_data(data)
