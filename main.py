@@ -18,10 +18,6 @@ class ExpenseUpdate(BaseModel):
     date: str | None = None
     description: str | None = None
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a032d34712407d61f99fffa6f96f29f4bec69e8b
 
 def load_data():
     with open('expenses.json','r') as f:
@@ -100,8 +96,4 @@ def delete_expense(expense_id : str):
     if expense_id not in data:
         raise HTTPException(status_code=404, detail='Expense not found')
     del data[expense_id]
-<<<<<<< HEAD
     save_data(data)
-=======
-    save_data(data)
->>>>>>> a032d34712407d61f99fffa6f96f29f4bec69e8b
