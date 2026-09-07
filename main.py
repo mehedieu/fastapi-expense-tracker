@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException, Path
 from pydantic import BaseModel,Field
-from typing import Annotated,Optional
 import json
 app = FastAPI()
 
@@ -19,27 +18,6 @@ class ExpenseUpdate(BaseModel):
     date: str | None = None
     description: str | None = None
 
-'''
-class ExpenseUpdate(BaseModel):
-    id: Annotated[Optional[str], Field(description='ID of the expense', examples='E001')]
-    name: Annotated[Optional[str], Field(description='Name of the expense', examples='Lunch')]
-    amount: Annotated[Optional[int], Field(..., description='Amount of the expense', examples='500')]
-    category: Annotated[Optional[str], Field(..., description='Category of the expense', examples='Food')]
-    date: Annotated[Optional[str], Field(..., description='Date of the expense', examples='2026-08-01')]
-    description: Annotated[Optional[str], Field(..., description='Description of the expense', examples='Lunch at restaurant')]
-
-'''
-'''
-
-class Expense(BaseModel):
-    id: Annotated[str, Field(..., description='ID of the expense', examples='E001')]
-    name: Annotated[str, Field(..., description='Name of the expense', examples='Lunch')]
-    amount: Annotated[int, Field(..., description='Amount of the expense', examples='500')]
-    category: Annotated[str, Field(..., description='Category of the expense', examples='Food')]
-    date: Annotated[str, Field(..., description='Date of the expense', examples='2026-08-01')]
-    description: Annotated[str, Field(..., description='Description of the expense', examples='Lunch at restaurant')]
-
-'''
 
 def load_data():
     with open('expenses.json','r') as f:
@@ -117,5 +95,5 @@ def delete_expense(expense_id : str):
     data = load_data()
     if expense_id not in data:
         raise HTTPException(status_code=404, detail='Expense not found')
-    del git add README.mddata[expense_id]
+    del data[expense_id]
     save_data(data)
